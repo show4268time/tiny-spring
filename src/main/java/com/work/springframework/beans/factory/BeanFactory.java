@@ -1,7 +1,5 @@
 package com.work.springframework.beans.factory;
 
-import com.work.springframework.beans.BeansException;
-
 /**
  * @description: Bean 工厂
  * @author: philipfry
@@ -9,6 +7,8 @@ import com.work.springframework.beans.BeansException;
  **/
 public interface BeanFactory {
 
-    Object getBean(String name) ;
+    Object getBean(String name);
+
+    Object getBean(String name, Object... args);
 
 }
